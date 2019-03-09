@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Button } from 'evergreen-ui';
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -38,6 +40,7 @@ class App extends Component {
           <Route path="/" exact component={Index} />
           <Route path="/about/" component={About} />
           <Route path="/users/" component={Users} />
+          <Button>Click Here</Button>
         </div>
       </Router>
     );
