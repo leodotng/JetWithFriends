@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { Button } from 'evergreen-ui';
+import { Button, TextInput } from 'evergreen-ui';
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -40,7 +40,27 @@ class App extends Component {
           <Route path="/" exact component={Index} />
           <Route path="/about/" component={About} />
           <Route path="/users/" component={Users} />
-          <Button>Click Here</Button>
+          
+          <h1>
+            Where do you want to go?
+          </h1>
+          <TextInput
+            name="text-input-name"
+            placeholder="City..."
+          /><br/><br/>
+          <TextInput
+            name="text-input-name"
+            placeholder="Phone# 1..."
+          /><br/><br/>
+          <TextInput
+            name="text-input-name"
+            placeholder="Phone# 2..."
+          /><br/><br/>
+          <TextInput
+            name="text-input-name"
+            placeholder="Phone# 3..."
+          /><br/><br/>
+          <Button>Let's Jet</Button>
         </div>
       </Router>
     );
